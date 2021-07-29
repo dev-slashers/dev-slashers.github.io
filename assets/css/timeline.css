@@ -21,7 +21,7 @@
 
 
 
-@media screen and (min-width: 1321px) {
+@media screen and (min-width: 968px) {
     .timeline-agency {
         font-size: 2em;
     }
@@ -29,16 +29,20 @@
     .timeline-roles {
         font-size: 1.5em;
     }
+
 }
 
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 1320px) {
+@media screen and (max-width: 967px) {
     .timeline-agency {
         font-size: 1em;
     }
 
     .timeline-roles {
         font-size: 0.7em;
+    }
+
+    .timeline-content {
+        width: 100%!important;
     }
 }
 
@@ -160,17 +164,21 @@ blockquote {
     right: 0;
 }
 @media screen and (max-width: 768px) {
+
     .timeline::before {
         left: 50px;
     }
     .timeline .timeline-img {
         left: 50px;
     }
+    /*
     .timeline .timeline-content {
         max-width: 100%;
         width: auto;
         margin-left: 70px;
     }
+
+     */
     .timeline .timeline-item:nth-child(even) .timeline-content {
         float: none;
     }
