@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow:400,500,700');
+
+
+
+
+#highlight {
+    color: #ea8478;
+    font-size: 1.25rem;
+}
+
+.gallery {
+    padding: 0 0 4rem 0;
+}
+
+.img-container {
+    width: 100%;
+    height: 500px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+}
+
+.img-content-hover {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    display: none;
+    padding: 1rem;
+    background: #fff;
+    font-weight: 400;
+    margin-top: 1.25rem;
+    margin-left: -2rem;
+}
+
+.title {
+    color: #2e2e2e;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.category {
+    font-size: 1rem;
+    color: #787878;
+}
+
+.img-content {
+    display: none;
+}
+
+.social, .copyright {
+    margin: 1rem;
+}
+
+.social li {
+    display: inline-block;
+}
+
+footer {
+    padding: 1rem 0;
+    background: #f7f7f7;
+    text-align: center;
+}
+
+@supports (display: grid) {
+    .gallery .grid {
+        grid-gap: 1rem;
+    }
+}
+
+
